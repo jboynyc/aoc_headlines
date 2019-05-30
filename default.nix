@@ -4,9 +4,9 @@ stdenv.mkDerivation rec {
   env = buildEnv { name = name; paths = buildInputs; };
   buildInputs = [
     jupyter
-    python36Packages.pandas
-    python36Packages.requests
-    python36Packages.matplotlib
-    python36Packages.beautifulsoup4
+    python37Packages.pandas
+    python37Packages.requests
+    python37Packages.matplotlib
+    python37Packages.beautifulsoup4
   ];
 }
